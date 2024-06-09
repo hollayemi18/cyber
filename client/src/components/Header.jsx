@@ -102,7 +102,26 @@ export default function Header() {
         <Navbar.Toggle />
       </div>
       {currentUser ? (
-        <Navbar.Collapse></Navbar.Collapse>
+        <Navbar.Collapse>
+          <Navbar.Link active={path === ''} as={'div'}>
+            <Link to=''>
+              {' '}
+              <span className='flex my-4 '>Learning</span>
+            </Link>
+          </Navbar.Link>
+          <Navbar.Link active={path === ''} as={'div'}>
+            <Link to=''>
+              {' '}
+              <span className='flex my-4 '>pratical</span>
+            </Link>
+          </Navbar.Link>
+          <Navbar.Link active={path === ''} as={'div'}>
+            <Link to=''>
+              {' '}
+              <span className='flex my-4 '>Badges and Certificate</span>
+            </Link>
+          </Navbar.Link>
+        </Navbar.Collapse>
       ) : (
         <Navbar.Collapse>
           <Navbar.Link active={path === '/'} as={'div'}>
