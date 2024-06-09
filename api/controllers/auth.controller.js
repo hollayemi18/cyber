@@ -16,6 +16,18 @@ export const signup = async (req, res, next) => {
   ) {
     next(errorHandler(400, 'All fields are required'));
   }
+  const validDetails = await User.findOne({ email });
+  const validName = await User.findOne({ username });
+  try {
+    if (validDetails) {
+      next(errorHandler(400, 'Email Existed'));
+    }
+    if (validName) {
+      next(errorHandler(400, 'Username Existed'));
+    }
+  } catch (error) {
+    next();
+  }
 
   const hashedPassword = bcryptjs.hashSync(password, 10);
 
