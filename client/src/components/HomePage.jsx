@@ -1,7 +1,7 @@
 import { Container } from './Utils';
 import Banner from './Banner ';
 import Accordion from './Accordion';
-import anime from '../image/front.jpg';
+import anime from '../image/how5.jpg';
 import anime1 from '../image/comm.jpg';
 import anime2 from '../image/img13.png';
 import anime3 from '../image/eas3.jpg';
@@ -36,8 +36,11 @@ const Home = () => {
               Beginner's Level
             </h3>
             <h2 className='max-w-lg px-5 pb-3 text-[#c4458f] text-pretty text-sm font-sans'>
-              create an account or log in with your email and password create an
-              create an account or log in with your email and password account
+              Unlock your creativity with tailoring! As a Beginner Learn the
+              basics of stitching, cutting, and designing your own clothes. With
+              endless possibilities, turn your imagination into wearable art.
+              Start your journey today and craft unique pieces that truly
+              express your style!{' '}
             </h2>
           </div>
           <div
@@ -51,9 +54,12 @@ const Home = () => {
               Gain Experience
             </h3>
             <p className='max-w-lg px-5 pb-3 text-[#c4458f] text-pretty text-sm font-sans'>
-              create an account or log in with your email and password create an
-              create an account or log in with your email and password account
-              create an account or log in with your email and password
+              Gain hands-on experience in tailoring and watch your skills
+              flourish! Practice cutting, stitching, and designing to create
+              stunning, custom-fit garments. Each project hones your craft,
+              boosting your confidence and creativity. Dive into the world of
+              tailoring, where every stitch brings you closer to mastering this
+              timeless art. Start sewing today!
             </p>
           </div>
           <div
@@ -67,9 +73,12 @@ const Home = () => {
               Career Level Up
             </h3>
             <p className='max-w-lg px-5 pb-3 text-[#c4458f] text-pretty text-sm font-sans'>
-              create an account or log in with your email and password create an
-              create an account or log in with your email and password account
-              create an account or log in with your email and password
+              Elevate your tailoring career to new heights! Master advanced
+              techniques, explore intricate designs, and perfect your craft.
+              With each project, enhance your portfolio, impress clients, and
+              open doors to exclusive opportunities. Take the next step in your
+              tailoring journey and transform your passion into a thriving,
+              successful career. Level up now!
             </p>
           </div>
         </div>
@@ -77,7 +86,7 @@ const Home = () => {
 
       <div
         className='wow flex flex-col justify-center
-        items-center lg:flex-row  lg:justify-evenly fadeInUp mt-7 pb-10 text-white w-auto bg-no-repeat bg-cover bg-center'
+        items-center lg:flex-row  lg:justify-evenly fadeInUp mt-7 pb-10 w-auto bg-no-repeat bg-cover bg-center'
         style={{ backgroundImage: "url('/banter.png')" }}
       >
         <div
@@ -85,10 +94,10 @@ const Home = () => {
           md:text-2xl font-bold'
         >
           <div>
-            <img src={anime} alt='' className='rounded-full' />
+            <img src={anime3} alt='' className='rounded-full' />
           </div>
         </div>
-        <div className='flex  flex-col mt-8 justify-center'>
+        <div className='flex  text-[#c4458f] flex-col mt-8 justify-center'>
           <h4 className='font-serif lg:text-4xl'>New to Tailoring?</h4>
           <h1 className='font-serif lg:text-4xl'> No Problem!</h1>
           <Link to={'/sign-up'}>
@@ -119,8 +128,9 @@ const Home = () => {
               </h3>
               <h1 className='font-semibold'>Get Hands On Skill</h1>
               <h3 className='max-w-lg text-thin font-serif'>
-                Integrated online payment system to manage transaction and for
-                easy payment of order
+                Develop advanced skills, embrace new trends, and refine your
+                craftsmanship. Every project is a step towards mastery, Grow
+                your expertise and watch your success unfold!
               </h3>
             </div>
           </div>
@@ -136,8 +146,8 @@ const Home = () => {
               </h3>
               <h1 className='font-semibold'>Noob To Expert</h1>
               <p className='max-w-lg font-serif text-lg'>
-                Integrated online payment system to manage transaction and for
-                easy payment of order
+                Start with the basics of stitching and cutting, then gradually
+                master advanced techniques and intricate designs
               </p>
             </div>
           </div>
