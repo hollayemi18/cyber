@@ -53,24 +53,12 @@ export default function Home() {
       </div>
 
       <div className='max-w-6xl mx-auto p-5 flex flex-col gap-8 py-12'>
-        {posts && posts.length > 0 && (
-          <div className='flex flex-col gap-6'>
-            <h2 className='text-2xl font-semibold text-center'>
-              Recent Blog Posts
-            </h2>
-            <div className='flex flex-wrap gap-4'>
-              {posts.map((post) => (
-                <PostCard key={post._id} post={post} />
-              ))}
-            </div>
-            <Link
-              to={'/search'}
-              className='text-lg text-teal-500 hover:underline text-center'
-            >
-              View all blog posts
-            </Link>
-          </div>
-        )}
+        <Link
+          to={'/search'}
+          className='text-lg text-teal-500 hover:underline text-center'
+        >
+          View all blog posts
+        </Link>
       </div>
     </div>
   );
